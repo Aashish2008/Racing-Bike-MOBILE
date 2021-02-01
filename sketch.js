@@ -196,12 +196,12 @@ function draw() {
 }
 
   // right arrow
-   if(keyDown("RIGHT_ARROW")) {    
+   if(touches.length>0 || keyDown("RIGHT_ARROW")) {    
     bike.velocityX = 10;
     }
  
   //left arrow
-  if(keyDown("LEFT_ARROW")) {
+  if(touches.length>0 || keyDown("LEFT_ARROW")) {
     bike.velocityX = -10;
   }
 
