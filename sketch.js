@@ -196,14 +196,16 @@ function draw() {
 }
 
   // right arrow
-   if(touches.length>0 || keyDown("RIGHT_ARROW")) {    
-    bike.velocityX = 10;
-    }
+   //if(touches.length>0 || keyDown("RIGHT_ARROW")) {    
+   // bike.velocityX = 10;
+   // }
  
   //left arrow
-  if(touches.length>0 || keyDown("LEFT_ARROW")) {
-    bike.velocityX = -10;
-  }
+  //if(touches.length>0 || keyDown("LEFT_ARROW")) {
+  //  bike.velocityX = -10;
+  //}
+
+  bike.x = World.mouseX;
 
       
   if (bike.x<120 || bike.x>580 || CarsGroup.isTouching(bike) || bike.isTouching(StoneGroup)){     
