@@ -233,7 +233,7 @@ else if (gameState==END){
         
 }
 
-if(mousePressedOver(RESTART) && gameState === END) {
+if(touches.length>0 || mousePressedOver(RESTART) && gameState === END) {
         gameState = PLAY;
         reset();
 }
